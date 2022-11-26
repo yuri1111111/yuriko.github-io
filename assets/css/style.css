@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Oswald', sans-serif;
+
+}
+p{
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+/* (1) header area */
+.nav{
+  width: 85%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.nav h1{
+  text-transform: uppercase;
+  width: 50%;
+  float: left;
+}
+
+.nav h1 a{
+  color: #96746b;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav ul{
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-top: 1em;
+}
+.nav ul li{
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.nav ul li a{
+  color: #312a26;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+.banner{
+  /* backgroundimage
+  backgroundsize
+  backfroundposition
+  position
+  width
+  height */
+  background-image: url(../image/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 670px;
+  position: relative;
+}
+.banner-text{
+  /* position
+  color
+  top
+  left */
+  position: absolute;
+  color: #c7a17a;
+  transform: translate(0%,-50%);
+  top: 300px;
+  left: 80px;
+}
+.banner-text h2{
+  /* color
+  font-size
+  text-transform
+   */
+   border: 2px solid blue;
+   color: #c7a17a;
+   font-size: 4em;
+   text-transform: uppercase;
+}
+.banner-text h2 span{
+ color: #96746b;
+}
+.banner-text p{
+  color: #fff;
+}
+.banner a{
+  /* text-decoration
+  display
+  padding
+  background-color
+  color
+  font-family
+   */
+   text-decoration: none;
+   display: inline-block;
+   padding: 1em;
+   background-color: #312a26;
+   color: #fff;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   margin-top: 1em;
+}
+/* End of Banner Section */
+/* Ads Section */
+.ads{
+  width: 85%;
+  margin: 4em auto;
+  overflow: auto;
+}
+.ads-items{
+width: 48.5%;
+float: left;
+height: 350px;
+background-size: cover;
+background-position:center;
+position: relative;
+margin-bottom: 3%;
+}
+.ads-item1{
+  /* backgrond-img */
+  background-image: url(../image/ads-img1.jpg);
+margin-right: 30px;
+}
+.ads-item2{
+  /* backgrond-img */
+  background-image: url(../image/ads-img2.jpg);
+
+}
+.ads-text{
+/* 
+position
+top
+left
+width
+*/
+transform: translateY(-50);
+position: relative;
+top:30%;
+left: 10%;
+width: 40%;
+}
+.ads-text h3{
+  /* 
+  text-transform
+  fontsize
+  color
+  lineheight
+  text-shadow */
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #fff;
+  line-height: 1.2em;
+  text-shadow: 3px 3px 6px #312a26 ;
+}
+.ads-text a{
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 1em;
+  text-shadow: 3px 3px 6px #312a26 ;
+}
+
+/* Mershandise Section */
+.merch{
+  width: 85%;
+  margin: 4em auto;
+}
+.section-header{
+  text-align: center;
+}
+.section-header span{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: #c7a17a;
+}
+.section-header h2{
+  text-transform: uppercase;
+  color: #312a26;
+}
+.section-header hr{
+  background-color: #c7a17a;
+  height: 2px;
+  width: 25%;
+  margin: auto;
+}
+
+/* Merch Gallery */
+.merch-gallery{
+  margin-top: 2em;
+  overflow: auto;
+}
+.merch-items{
+  width: 24.25%;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.merch-items:nth-child(4),
+.merch-items:nth-child(8){
+  margin-right: 0;
+}
+.merch-items img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Discount Area */
+.discount{
+  width: 85%;
+  margin: 4em auto;
+  background-image: url(../image/discount-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  position: relative;
+}
+.discount-text{
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.discount-text span{
+  font-family: 'Raleway', sans-serif; 
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px #312a26;
+}
+.discount-text h2{
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px #312a26;
+}
+.discount-text a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, .5);
+  color: #312a26;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 700;
+  margin-top: 1em;
+
+}
+
+/* Ads Section 2 */
+.ads-item3{
+  background-image: url(../image/ads-img3.jpg);
+  margin-right: 30px;
+
+}
+.ads-item4{
+  background-image: url(../image/ads-img4.jpg);
+
+}
+.ads-item5{
+  background-image: url(../image/ads-img5.jpg);
+margin-right: 30px;
+}
+.ads-item6{
+  background-image: url(../image/ads-img6.jpg);
+}
+/* End ofAds Section 2 */
+
+/* Reservation Section*/
+.reservation{
+  width: 85%;
+  margin: 4em auto;
+}
+
+form{
+overflow: auto;
+}
+
+.form-group{
+  margin-top: 2em;
+  background-color: #f2f2f2;
+  float: left;
+  width: 49.5%;
+  border-radius: 5px;
+  padding: 2em;
+  height: 650px;
+}
+
+.form-group:nth-child(1){
+  margin-right: 1%;
+}
+form input,
+form label,
+form select,
+form textarea{
+  display: inline-block;
+  width: 100%;
+  font-family: 'Raleway', sans-serif; 
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+form label{
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: .5em;
+}
+
+.rest-time{
+  text-align: center;
+}
+.rest-time *{
+  width: auto;
+}
+form p{
+  margin: 1em;
+  text-align: center;
+  font-weight: 700;
+}
+
+form h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+form h3::after{
+  content: "";
+  display: block;
+  /* 
+  width
+  height
+  margin
+  background-size
+  background-image
+   */
+   background-image: url(../image/reservation-cards.png);
+   width: 150px;
+   height: 30px;
+   margin: auto;
+   background-size: cover;
+}
+.res-agreement *{
+width: auto;
+}
+form input[ type="submit"]{
+background-color: #c7a17a;
+font-weight: 700;
+text-transform: uppercase;
+}
+.footer{
+  background-image: url(../image/footer-img.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+.footer h3{
+  color: #fff;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.footer h4{
+  color: #fff;
+}
+
+.footer table{
+color: #fff;
+}
+.footer p{
+  color: #c7a17a;
+}
+.footer-widgets{
+  width: 23%;
+  float: left;
+  position: relative;
+  left: 50px;
+  top:30px;
+  }
+  .footer input[ type="text"]{
+    width: 13em;
+  }
+  .footer input[ type="submit"]{
+    width: 7em;
+    height: 42px;
+  }
+  .roast table tr th{
+    border: 2px solid lightgray;
+    text-transform: capitalize;
+  }
+
+  .roast table tr td{
+    border: 1px solid lightgray;
+    height: 80px;
+  }
+  .roast table{
+    margin-top:10px;
+  }
+  .design{
+    width: 80%;
+    height: 1900px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .roast hr{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 32%;
+    margin: auto;
+  }
+  .design2 hr{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 32%;
+   margin: 0 auto 30px;
+  }
+  .roast img{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .design2 img{
+    width: 30%;
+    height: 250px;
+    position: relative;
+    right: 30px;
+  }
+  .design2 h3{
+    margin-top: 30px;
+  }
+  .design2 h1,
+  .design2 h4,
+  .design2 p{
+    width: 50%;
+    float: right;
+  }
+  .design2 h4{
+    position: relative;
+    bottom:200px;
+    right: 20px;
+  }
+  .design2 h1{
+    position: relative;
+    right: 90px;
+    top: 40px;
+  }
+
+  .design2 p{
+   position: relative;
+   bottom: 150px;
+   left: 32em;
+  }
+  .design2-1{
+    background-color: #f2f2f2;
+    padding-top: 10px;
+    padding-bottom: 80px;
+  }
+  .design2 a{
+    float: right;
+    position: relative;
+    bottom: 70px;
+    right: 40px;
+    background-color: #96746b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .design3 hr{
+    background-color: #c7a17a;
+    height: 2px;
+    width: 32%;
+    margin: auto;
+  }
+  .footer-social{
+    background-color: #19100f;
+    width: 100%;
+    height: 50px;
+    overflow: auto;
+  }
+  .social-widget{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 19em;
+    display: inline-block;
+    margin-top: 13px;
+  }
+  
